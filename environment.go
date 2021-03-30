@@ -29,10 +29,10 @@ type Environment struct {
 
 // EmailSettings determining how test failures trigger notifications
 type EmailSettings struct {
-	NotifyAll       bool       `json:"notify_all,omitempty"`
-	NotifyOn        string     `json:"notify_on,omitempty"`
-	NotifyThreshold int        `json:"notify_threshold,omitempty"`
-	Recipients      []*Contact `json:"recipients,omitempty"`
+	NotifyAll       bool       `json:"notify_all"`
+	NotifyOn        string     `json:"notify_on"`
+	NotifyThreshold int        `json:"notify_threshold"`
+	Recipients      []*Contact `json:"recipients"`
 }
 
 // EnvironmentIntegration represents an integration with a third-party. See https://www.runscope.com/docs/api/integrations
